@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <main class="container">
+        <h1>Libros</h1>
+
+        <form id="formularioAgregarLibro" class="mb-5">
+            <input required type="text" name="nombre" placeholder="Nombre libro" class="form-control mb-2">
+            <input required type="text" name="autor" placeholder="Autor libro" class="form-control mb-2">
+            <input required type="number" name="precio" placeholder="Precio libro" class="form-control mb-2">
+            <button type="submit" class="btn btn-primary">Agregar</button>
+        </form>
+
+        <ul id="todosLosLibros" class="list-group">
+            <!-- Pintar todos los libros -->
+            <!-- <li class="list-group-item">
+                <div class="mb-2">
+                    Nombre libro - autor - precio:
+                </div>
+                <div>
+                    <button onclick="eliminarLibro('1')" class="btn btn-danger btn-sm">Eliminar</button>
+                    <button onclick="editarLibro('1')" class="btn btn-warning btn-sm">Editar</button>
+                </div>
+            </li> -->
+        </ul>
+    </main>
+
+    <!-- Modal -->
+    <article class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Editar Libro</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formularioEditarLibro">
+                        <input required type="text" name="nombre" placeholder="Nombre libro" class="form-control mb-2">
+                        <input required type="text" name="autor" placeholder="Autor libro" class="form-control mb-2">
+                        <input required type="number" name="precio" placeholder="Precio libro"
+                            class="form-control mb-2">
+                        <button type="submit" class="btn btn-warning">Editar Libro</button>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </article>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"
+        integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
