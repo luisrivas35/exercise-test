@@ -44,7 +44,7 @@ const remove = async (id) => {
             DELETE FROM LIBROS WHERE id = $1
             RETURNING *
         `,
-        values: [id]    
+        values: [id]
     }
 
     const { rows } = await pool.query(query)

@@ -7,7 +7,7 @@ CREATE TABLE LIBROS (
 	AUTOR VARCHAR NOT NULL
 );
 
-SELECT * FROM LIBROS;
+
 
 -- seeders
 INSERT INTO LIBROS (ID, NOMBRE, PRECIO, AUTOR) VALUES 
@@ -15,3 +15,5 @@ INSERT INTO LIBROS (ID, NOMBRE, PRECIO, AUTOR) VALUES
 ('z_FrmrjC3B-ttWgg4n7Tu', 'El viejo y el mar', 200, 'Ernest Hemingway'),
 ('HNBfPALqm5yshLPpeG22F', 'Sherlock Holmes', 200, 'Arthur Conan Doyle'),
 ('Asl75JopegH3F6DWwhIcv', 'Casas Muertas', 200, 'Romulo Gallegos');
+
+SELECT * FROM LIBROS;

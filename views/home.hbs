@@ -1,0 +1,23 @@
+<h1>Libros</h1>
+
+<form id="formularioAgregarLibro" class="mb-5">
+    <input required type="text" name="nombre" placeholder="Nombre libro" class="form-control mb-2">
+    <input required type="text" name="autor" placeholder="Autor libro" class="form-control mb-2">
+    <input required type="number" name="precio" placeholder="Precio libro" class="form-control mb-2">
+    <button type="submit" class="btn btn-primary">Agregar</button>
+</form>
+
+<ul id="todosLosLibros" class="list-group">
+    <!-- Pintar todos los libros -->
+    <!-- <li class="list-group-item">
+        <div class="mb-2">
+            Nombre libro - autor - precio:
+        </div>
+        <div>
+            <button onclick="eliminarLibro('1')" class="btn btn-danger btn-sm">Eliminar</button>
+            <button onclick="editarLibro('1')" class="btn btn-warning btn-sm">Editar</button>
+        </div>
+    </li> -->
+</ul>
+
+{{> modal}}
